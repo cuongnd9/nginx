@@ -8,6 +8,7 @@
     "start:dev": "nodemon index.js"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "express": "^4.17.1",
     "giin": "^0.1.2"
   },
