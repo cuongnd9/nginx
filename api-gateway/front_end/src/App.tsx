@@ -7,7 +7,7 @@ function App() {
   const [greeting, setGreeting] = useState<string>('');
   useEffect(() => {
     (async function () {
-      const { data } = await axios('http://localhost:7000/fish_service/');
+      const { data } = await axios.get('http://localhost:7000/fish_service/');
       console.log(data, '-------------data');
       setGreeting(data);
     })()
